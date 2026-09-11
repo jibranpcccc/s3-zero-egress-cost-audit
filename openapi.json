@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "S3EgressAudit API",
+    "version": "1.0.0",
+    "description": "Cloudflare R2 vs AWS S3 Egress Pricing Audit, Backblaze B2 & Multipart Upload Tuning",
+    "contact": {
+      "name": "S3EgressAudit",
+      "url": "https://s3egressaudit.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://s3egressaudit.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
